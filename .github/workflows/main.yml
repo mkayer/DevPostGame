@@ -1,0 +1,58 @@
+            - name: Build iOS Action
+  # You may pin to the exact commit or the version.
+  # uses: sparkfabrik/ios-build-action@be021d9f600b104d199a500db7ba479149a6b257
+  uses: sparkfabrik/ios-build-action@v2.3.2
+  with:
+    # Upload to TestFlight.
+    upload-to-testflight: # optional
+    # Increment build number.
+    increment-build-number: # optional
+    # Project path
+    project-path: 
+    # Team id
+    team-id: 
+    # Team name
+    team-name: 
+    # Apple key id
+    apple-key-id: 
+    # Apple key issuer id
+    apple-key-issuer-id: 
+    # Apple key content
+    apple-key-content: 
+    # Workspace path
+    workspace-path: # optional, default is 
+    # Choose app-store, ad-hoc, package, enterprise, development, or developer-id
+    export-method: # optional, default is app-store
+    # For example, Debug, Release
+    configuration: # optional, default is Release
+    # Output path of ipa
+    output-path: # optional, default is output.ipa
+    # Scheme
+    scheme: # optional, default is 
+    # Targets to be updated with mobileprovision, code signing identity, etc
+    update-targets: # optional, default is 
+    # Boolean to tell if `pod install` should be run during build.
+    build-pods: # optional
+    # The path to the Podfile.
+    pods-path: # optional, default is Podfile
+    # The password to decrypt certificates.
+    match-password: 
+    # The git url where match can find the certificates.
+    match-git-url: 
+    # The basic authorization to access the repository.
+    match-git-basic-authorization: 
+    # The build type to use when building the app.
+    match-build-type: 
+    # Boolean to tell the Action to upload the .ipa to Browserstack App Live after the build.
+    browserstack-upload: # optional
+    # Browserstack username (required if browserstack-upload == true)
+    browserstack-username: # optional, default is 
+    # Browserstack access key (required if browserstack-upload == true)
+    browserstack-access-key: # optional, default is 
+    # Specify the Fastlane version you wish to use
+    fastlane-version: # optional, default is 2.213.0
+    # Name of the env file name to pass to fastlane --env
+    fastlane-env: # optional, default is 
+    # The iOS application identifier; useful to sync a specific provisioning profile
+    ios-app-id: # optional
+          
