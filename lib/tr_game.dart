@@ -80,8 +80,7 @@ class TRGame extends FlameGame {
           //result screen - you won/lost
 
         },
-        //initialRoute: savefile?'home':'tutorial',
-        initialRoute: 'fight',
+        initialRoute: savefile?'home':'tutorial',
       ),
     );
   }
