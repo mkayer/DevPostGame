@@ -1,8 +1,7 @@
-            - name: Build iOS Action
+ - name: Build iOS Action
   # You may pin to the exact commit or the version.
   # uses: sparkfabrik/ios-build-action@be021d9f600b104d199a500db7ba479149a6b257
-  uses: sparkfabrik/ios-build-action@v2.3.2
-  with:
+   uses: sparkfabrik/ios-build-action@v2.3.2 with:
     # Upload to TestFlight.
     upload-to-testflight: # optional
     # Increment build number.
